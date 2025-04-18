@@ -89,3 +89,38 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+//task 1
+//pseudocode
+
+//Function name: generateBadge
+//Purpose: Makes a badge using a person’s name and role.
+function attendeeBadge(name, role){
+    return console.log(`Name: ${name}, Role: ${role}`);
+    }
+    attendeeBadge("Skrek", "Ogre"); //Name: Shrek, Role: Ogre
+
+//task 2
+//pseudocode
+
+//Function name: calculateCost
+//Purpose: Multiplies number of people by cost per person. If over 100 people, gives 10% off.
+function calculateCost(attendees, costPerAttendee) {
+    let total = attendees * costPerAttendee;
+    if (attendees > 100){
+        let discount = 0.1;
+        total = total - (total * discount);
+    }
+    return total;
+}
+console.log(calculateCost(120,25)); //2700
+
+//task 3
+//pseudocode
+
+//Function name: isValidEmail
+//Purpose: Checks if an email has both "@" and "."
+function isValidEmail(email) {
+    return email.includes("@") && email.includes(".");
+  }
+  console.log(isValidEmail("user@example.com")); //true
+  console.log(isValidEmail("userdomain.com")); //false
